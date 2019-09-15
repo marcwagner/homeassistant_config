@@ -8,8 +8,8 @@
 
 
 # Include these directories
-!/www
-!/configuration
+!www/*
+!configuration/*
 
 
 # Ignore the following folders.
