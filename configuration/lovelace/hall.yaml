@@ -1,0 +1,70 @@
+title: hall
+path: hall
+icon: mdi:door-open
+theme: Dark
+panel: true
+cards:
+- type: horizontal-stack
+  cards:
+  - type: vertical-stack
+    cards:
+    - type: iframe
+      url: https://marcwagner.github.io/clock/lovelace_clock.html
+      aspect_ratio: 110%
+    - type: "custom:atomic-calendar"
+      maxDaysToShow: 8
+      entities:
+      - calendar.holidays_in_netherlands
+      - calendar.contacts
+      - calendar.koosjeenmarcgmailcom
+      - calendar.koosje_wagner
+      - calendar.koosje_werk
+      - calendar.marc_wagner
+      - calendar.koosje_maar_wel_relevant_voor_marc
+      - calendar.prive_woonboot
+  - type: vertical-stack
+    cards:
+    - type: glance
+      show_name: true
+      show_state: true
+      entities:
+      - entity: person.marc
+        image: /local/marc.jpg
+      - person.koosje
+      - person.roosmarijn
+
+
+  - type: vertical-stack
+    cards:
+    - type: weather-forecast
+      entity: weather.de_bilt
+    - type: horizontal-stack
+      cards:
+      - type: sensor
+        entity: sensor.hall_temperature
+        unit: 'C'
+        name: temperature
+
+      - type: sensor
+        entity: sensor.hall_humidity
+        unit: '%'
+        name: humidity
+    - type: horizontal-stack
+      cards:
+      - type: sensor
+        title: Energie
+        name: stroom
+        entity: sensor.power_use
+        graph: line
+        detail: 2
+        unit: Watt/s
+        icon: mdi:flash
+
+      - type: sensor
+        title: Gas
+        name: gas
+        entity: sensor.gas_use
+        graph: line
+        detail: 2
+        unit: mL/s
+        icon: mdi:fire

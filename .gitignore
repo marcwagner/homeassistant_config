@@ -1,5 +1,3 @@
-# A * ensures that everything will be ignored.
-*
 
 # Do not ignore these files 
 !*.yaml
@@ -27,6 +25,6 @@ known_devices.yaml
 # Other stuff to explicitly ignore
 home-assistant_v2.db
 home-assistant.log
-tts
-deps
+/tts
+/deps
 

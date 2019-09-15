@@ -1,0 +1,7 @@
+platform: mqtt
+name: servieskast
+state_topic: "home/woonkamer/servieskast"
+command_topic: "home/woonkamer/servieskast/set"
+qos: 1
+retain: true
+

@@ -1,0 +1,56 @@
+- id: some_arrives
+  alias: aankomen
+  trigger:
+    platform: state
+    entity_id: group.someone_home
+    to: home
+  action:
+    service: input_select.select_option
+    data:
+      entity_id: input_select.resident_state
+      option: Home
+
+- id: some_leaves
+  alias: vertrekken
+  trigger:
+    platform: state
+    entity_id: group.someone_home
+    to: not_home
+  action:
+    service: input_select.select_option
+    data:
+      entity_id: input_select.resident_state
+      option: Away
+
+- id: movement_indoors
+  alias: beweging thuis
+  trigger:
+    platform: state
+    entity_id: binary_sensor.hall_motion
+    to: 'on'
+  condition:
+    condition: time
+    after: '6:00:00'
+    before: '22:00:00'
+  action:
+    service: input_select.select_option
+    data:
+      entity_id: input_select.resident_state
+      option: Home
+
+- id: time_to_sleep
+  alias: bedtijd
+  trigger:
+    platform: time
+    at: '22:30:00'
+  condition:
+  - condition: state
+    entity_id: input_select.resident_state
+    state: Home
+  action:
+    service: input_select.select_option
+    data:
+      entity_id: input_select.resident_state
+      option: Sleeping
+
+

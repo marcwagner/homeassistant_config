@@ -1,0 +1,30 @@
+woonkamer_gordijnen:
+  sequence:
+  - service: light.turn_on
+    data:
+      entity_id: light.woonkamer_gordijn_kort
+      rgb_color: [255,64,0]
+      brightness: 0
+      white_value: 0
+  - service: light.turn_on
+    data:
+      entity_id: light.woonkamer_gordijn_lang
+      rgb_color: [255,64,0]
+      brightness: 0
+      white_value: 0
+  - service: light.turn_on
+    data:
+      entity_id: light.woonkamer_gordijn_kort
+      rgb_color: [255,64,0]
+      brightness: 120
+      white_value: 0
+      transition: 300
+      effect: "fade"
+  - service: light.turn_on
+    data:
+      entity_id: light.woonkamer_gordijn_lang
+      rgb_color: [255,64,0]
+      brightness: 120
+      white_value: 0
+      transition: 300
+      effect: "fade"

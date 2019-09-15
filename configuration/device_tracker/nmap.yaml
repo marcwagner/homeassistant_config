@@ -1,0 +1,7 @@
+platform: nmap_tracker
+hosts:
+  - 10.0.0.160
+  - 10.0.0.161
+  - 10.0.0.162
+  - 10.0.0.163
+home_interval: 10

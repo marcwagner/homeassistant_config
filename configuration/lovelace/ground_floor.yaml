@@ -1,0 +1,89 @@
+title: ground floor
+path: groundfloor
+icon: mdi:sofa
+cards:
+- type: picture-elements
+  image: /local/img/ground_floor.jpg
+  elements:
+  - type: state-icon
+    entity: light.schemerlamp
+    tap_action:
+      action: toggle
+    style:
+      top: 8%
+      left: 8%
+  - type: state-icon
+    entity: light.tv_lamp
+    tap_action:
+      action: toggle
+    style:
+      top: 8%
+      left: 45%
+  - type: state-icon
+    entity: light.servieskast
+    tap_action:
+      action: toggle
+    style:
+      top: 63%
+      left: 7%
+  - type: state-icon
+    entity: light.boekenkast_links
+    tap_action:
+      action: toggle
+    style:
+      top: 95%
+      left: 36%
+  - type: state-icon
+    entity: light.boekenkast_rechts
+    tap_action:
+      action: toggle
+    style:
+      top: 95%
+      left: 44%
+  - type: state-icon
+    entity: light.woonkamer_gordijn_kort
+    tap_action:
+      action: toggle
+    style:
+      top: 95%
+      left: 18%
+  - type: state-icon
+    entity: light.woonkamer_gordijn_lang
+    tap_action:
+      action: toggle
+    style:
+      top: 68%
+      left: 45%
+  - type: state-label
+    entity: sensor.hall_temperature
+    style:
+      top: 38%
+      left: 60%
+  - type: state-label
+    entity: sensor.hall_humidity
+    style:
+      top: 42%
+      left: 60%
+  - type: state-icon
+    entity: binary_sensor.hall_motion
+    style:
+      top: 30%
+      left: 52%
+  - type: state-icon
+    entity: switch.hall_mirror
+    tap_action:
+      action: toggle
+    style:
+      top: 30%
+      left: 59%
+
+- type: media-control
+  entity: media_player.all_speakers
+- type: media-control
+  entity: media_player.kitchen_speaker
+- type: media-control
+  entity: media_player.living_room_speaker
+- type: media-control
+  entity: media_player.woonkamer
+- type: media-control
+  entity: media_player.woonkamer_stereo

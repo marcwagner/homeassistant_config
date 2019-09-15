@@ -1,0 +1,6 @@
+name: marc
+id: marc12345
+user_id: f05976f2896e4587aa26166950db4ad7
+device_trackers:
+  - device_tracker.phonemarc
+  - device_tracker.phonemarc_gps

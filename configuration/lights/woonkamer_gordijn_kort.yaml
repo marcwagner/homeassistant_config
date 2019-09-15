@@ -1,0 +1,10 @@
+platform: mqtt
+schema: json
+name: woonkamer_gordijn_kort
+state_topic: "home/woonkamer/gordijn_kort"
+command_topic: "home/woonkamer/gordijn_kort/set"
+retain: true
+qos: 1
+rgb: true
+brightness: true
+white_value: true

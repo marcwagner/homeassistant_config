@@ -1,0 +1,6 @@
+platform: mqtt
+name: tv_lamp
+state_topic: "home/woonkamer/tv_lamp"
+command_topic: "home/woonkamer/tv_lamp/set"
+retain: true
+qos: 1

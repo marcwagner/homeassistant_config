@@ -1,0 +1,18 @@
+monthly_energy:
+  source: sensor.power_delivered
+  cycle: monthly
+daily_on_peak:
+  source: sensor.t1_delivered
+  cycle: daily
+daily_off_peak:
+  source: sensor.t2_delivered
+  cycle: daily
+monthly_gas:
+  source: sensor.gas_delivered
+  cycle: monthly
+daily_gas:
+  source: sensor.gas_delivered
+  cycle: daily
+
+
+

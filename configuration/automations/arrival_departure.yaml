@@ -1,0 +1,27 @@
+- id: lights_off_when_not_home
+  alias: niemand thuis
+  trigger:
+    platform: state
+    entity_id: input_select.resident_state
+    from: Home
+  action:
+    service: scene.turn_on
+    entity_id: scene.all_lights_off
+
+
+- id: lights_on_when_arrive_home_and_dark
+  alias: iemand komt thuis en het is donker buiten
+  trigger:
+    platform: state
+    entity_id: input_select.resident_state
+    to: Home
+  condition:
+    condition: numeric_state
+    entity_id: sensor.br_irradiance
+    below: 150
+  action:
+    service: scene.turn_on
+    entity_id: scene.livingroom_lights
+
+
+

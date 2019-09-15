@@ -1,0 +1,6 @@
+name: koosje
+id: koosje12345
+user_id: 2789ee63903d49e382d2f331fcaafcf1
+device_trackers:
+  - device_tracker.phone_koosje
+

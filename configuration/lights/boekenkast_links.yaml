@@ -1,0 +1,6 @@
+platform: mqtt
+name: boekenkast links
+state_topic: "home/woonkamer/boekenkast/light/light2"
+command_topic: "home/woonkamer/boekenkast/light/light2/set"
+qos: 1
+retain: true

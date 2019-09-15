@@ -1,0 +1,10 @@
+name: all_lights_off
+entities:
+  light.servieskast: off
+  light.boekenkast_rechts: off
+  light.boekenkast_links: off
+  light.schemerlamp: off
+  light.woonkamer_gordijn_lang: off
+  light.woonkamer_gordijn_kort: off
+  light.tv_lamp: off
+  switch.hall_mirror: off

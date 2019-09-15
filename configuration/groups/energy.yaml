@@ -1,0 +1,11 @@
+energie:
+  name: energie
+  entities:
+    - sensor.last_update
+    - sensor.power_delivering
+    - sensor.power_use
+    - sensor.gas_use
+    - sensor.t1_delivered
+    - sensor.t2_delivered
+    - sensor.power_returning
+    - sensor.gas_delivered

@@ -1,0 +1,36 @@
+# check system states for the server
+- platform: systemmonitor
+  resources:
+    - type: disk_use_percent
+      arg: /
+    - type: network_in
+      arg: enp3s0
+    - type: network_out
+      arg: enp3s0
+    - type: memory_free
+    - type: processor_use
+    - type: last_boot
+
+
+# check if backups have run correctly
+- platform: mqtt
+  name: "foto backup"
+  state_topic: "home/server/sync-foto"
+
+- platform: mqtt
+  name: "document backup"
+  state_topic: "home/server/sync-docs"
+
+
+# check certificate
+- platform: cert_expiry
+  host: de-wagnertjes.duckdns.org
+  name: de-wagnertjes_ssl_cert
+
+# test if the script still works
+- platform: cert_expiry
+  host: home-assistant.io
+  name: home-assistant_ssl_cert
+
+
+

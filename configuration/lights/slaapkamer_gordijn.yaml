@@ -1,0 +1,12 @@
+platform: mqtt
+schema: json
+name: slaapkamer_gordijn
+state_topic: "home/slaapkamer/gordijn"
+command_topic: "home/slaapkamer/gordijn/set"
+retain: true
+qos: 1
+rgb: true
+brightness: true
+effect: true
+effect_list:
+  - 'fade'

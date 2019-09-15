@@ -1,0 +1,6 @@
+name: licht_juliette
+platform: mqtt
+state_topic: tele/sonoff/RESULT
+value_template: '{{value_json.RfReceived.Data}}'
+payload_on: '555515'
+payload_off: '555514'

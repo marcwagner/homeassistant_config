@@ -1,0 +1,7 @@
+project_id: 19207692763-qr70t0emisv7kn3u2862l9f39et4049j.apps.googleusercontent.com
+api_key: AIzaSyCB3Z8NogLcAGuLsNnzEe5TWzXf4jISqtw
+exposed_domains:
+  - light
+  - media_player
+  - scene
+  - sensor

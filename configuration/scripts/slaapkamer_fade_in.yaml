@@ -1,0 +1,32 @@
+slaapkamer_gordijn_fade_in:
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.slaapkamer_gordijn
+        rgb_color: [255,64,0]
+        brightness: 0
+    - delay: '00:00:10'
+    - service: light.turn_on
+      data:
+        entity_id: light.slaapkamer_gordijn
+        rgb_color: [255,64,0]
+        brightness: 48
+        transition: 30
+        effect: "fade"
+
+slaapkamer_boekenkast_fade_in:
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.slaapkamer_boekenkast
+        rgb_color: [255,64,0]
+        brightness: 0
+    - delay: '00:00:01'
+    - service: light.turn_on
+      data:
+        entity_id: light.slaapkamer_boekenkast
+        rgb_color: [255,64,0]
+        brightness: 255
+        transition: 30
+        effect: "fade"
+

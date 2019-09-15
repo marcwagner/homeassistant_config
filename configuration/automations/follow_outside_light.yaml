@@ -1,0 +1,23 @@
+- id: lights_on_when_dark
+  alias: donker buiten.. lichten aan
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.br_irradiance
+    below: 150
+  condition:
+    condition: state
+    entity_id: input_select.resident_state
+    state: Home
+  action:
+    service: scene.turn_on
+    entity_id: scene.livingroom_lights
+
+- id: lights_off_when_light_outside
+  alias: zon buiten.. lichten uit
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.br_irradiance
+    above: 170
+  action:
+    service: scene.turn_on
+    entity_id: scene.all_lights_off

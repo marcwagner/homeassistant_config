@@ -1,0 +1,16 @@
+weer:
+  name: weer
+  entities:
+    - sensor.br_detailed_condition
+    - sensor.br_humidity
+    - sensor.br_irradiance
+    - sensor.br_precipitation
+    - sensor.br_pressure
+    - sensor.br_temperature
+    - sensor.br_visibility
+    - sensor.br_wind_direction
+    - sensor.br_wind_force
+    - sensor.br_wind_speed
+    - sensor.yr_symbol
+    - sun.sun
+    - sensor.moon

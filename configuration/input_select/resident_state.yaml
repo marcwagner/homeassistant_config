@@ -1,0 +1,9 @@
+resident_state:
+  name: waar zijn we
+  options:
+    - Home
+    - Away
+    - Sleeping
+    - Going_Home
+  initial: Home
+  icon: mdi:home-account

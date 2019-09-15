@@ -1,0 +1,5 @@
+platform: mqtt
+name: hall mirror
+state_topic: "home/hall/mirror"
+command_topic: "home/hall/mirror/set"
+retain: true

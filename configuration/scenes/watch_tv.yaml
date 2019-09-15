@@ -1,0 +1,10 @@
+name: tv_kijken
+entities:
+  light.servieskast: on
+  light.boekenkast_rechts: on
+  light.boekenkast_links: on
+  light.schemerlamp: on
+
+  light.woonkamer_gordijn_lang: off
+  light.woonkamer_gordijn_kort: off
+  light.tv_lamp: off

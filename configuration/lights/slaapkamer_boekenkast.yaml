@@ -1,0 +1,12 @@
+platform: mqtt
+schema: json
+name: slaapkamer_boekenkast
+state_topic: "home/slaapkamer/kast/licht"
+command_topic: "home/slaapkamer/kast/licht/set"
+retain: true
+qos: 1
+rgb: true
+brightness: true
+effect: true
+effect_list:
+  - 'fade'

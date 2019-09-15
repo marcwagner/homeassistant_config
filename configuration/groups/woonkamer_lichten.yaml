@@ -1,0 +1,11 @@
+woonkamer_licht:
+  name: woonkamer licht
+  icon: mdi:lightbulb
+  entities:
+    - light.schemerlamp
+    - light.servieskast
+    - light.boekenkast_links
+    - light.boekenkast_rechts
+    - light.woonkamer_gordijn_lang
+    - light.woonkamer_gordijn_kort
+    - light.tv_lamp

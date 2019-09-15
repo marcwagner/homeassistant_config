@@ -1,0 +1,45 @@
+title: first floor
+path: firstfloor
+icon: mdi:bed-empty
+cards:
+- type: picture-elements
+  image: /local/img/1st_floor.jpg
+  elements:
+  - type: state-icon
+    entity: light.slaapkamer_klerenkast
+    tap_action:
+      action: toggle
+    style:
+      top: 35%
+      left: 15%
+  - type: state-icon
+    entity: light.slaapkamer_boekenkast
+    tap_action:
+      action: toggle
+    style:
+      top: 15%
+      left: 23%
+  - type: state-icon
+    entity: light.slaapkamer_boekenkast
+    tap_action:
+      action: toggle
+    style:
+      top: 65%
+      left: 8%
+  - type: state-icon
+    entity: light.slaapkamer_gordijn
+    tap_action:
+      action: toggle
+    style:
+      top: 70%
+      left: 29%
+  - type: state-label
+    entity: sensor.slaapkamer_temperature
+    style:
+      top: 80%
+      left: 28%
+
+- type: entities
+  entities:
+  - script.slaapkamer_gordijn_fade_in
+  - script.slaapkamer_boekenkast_fade_in

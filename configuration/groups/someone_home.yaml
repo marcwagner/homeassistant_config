@@ -1,0 +1,6 @@
+someone_home:
+  name: iemand thuis
+  view: no
+  entities:
+    - device_tracker.phonekoosje
+    - device_tracker.phonemarc

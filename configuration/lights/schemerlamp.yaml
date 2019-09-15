@@ -1,0 +1,6 @@
+platform: mqtt
+name: schemerlamp
+state_topic: "home/woonkamer/bank_schemerlamp"
+command_topic: "home/woonkamer/bank_schemerlamp/set"
+qos: 1
+retain: true

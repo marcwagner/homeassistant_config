@@ -1,0 +1,21 @@
+#indoor_temp_and_humidity
+
+# hallway temp and humidity
+  - platform: mqtt
+    name: "hall temperature"
+    device_class: temperature
+    unit_of_measurement: 'C'
+    state_topic: "home/hall/temperature"
+  - platform: mqtt
+    name: "hall humidity"
+    device_class: humidity
+    unit_of_measurement: '%'
+    state_topic: "home/hall/humidity"
+
+#bedroom temperature
+  - platform: mqtt
+    name: "slaapkamer temperature"
+    device_class: temperature
+    unit_of_measurement: 'C'
+    state_topic: "home/slaapkamer/kast/temperature"
+

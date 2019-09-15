@@ -1,0 +1,9 @@
+devices_present:
+  name: wie is waar
+  icon: mdi:cellphone-wireless
+  entities:
+    - input_select.resident_state
+    - device_tracker.phonekoosje
+    - device_tracker.phonemarc
+    - device_tracker.phoneroosmarijn
+    - device_tracker.phonecharlotte

@@ -1,0 +1,6 @@
+platform: mqtt
+name: slaapkamer_klerenkast
+state_topic: "home/slaapkamer/kast-bovenlicht"
+command_topic: "home/slaapkamer/kast-bovenlicht/set"
+qos: 1
+retain: true

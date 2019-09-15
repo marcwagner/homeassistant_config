@@ -1,0 +1,10 @@
+- id: slaapkamer_lichtschakelaar
+  alias: slaapkamer klerenkast lichten aan uit
+  trigger:
+    platform: state
+    entity_id: binary_sensor.licht_slaapkamer
+    to: 'on'
+  action:
+    service: light.toggle
+    data:
+      entity_id: light.slaapkamer_klerenkast
