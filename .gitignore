@@ -6,12 +6,27 @@
 !.gitignore
 !*.md
 
+
+# Include these directories
+!/www
+!/configuration
+
+
 # Ignore the following folders.
 .storage
 .cloud
 .google.token
+.HA_VERSION
+
 
 # Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
 ip_bans.yaml
 secrets.yaml
 known_devices.yaml
+
+# Other stuff to explicitly ignore
+home-assistant_v2.db
+home-assistant.log
+tts
+deps
+
