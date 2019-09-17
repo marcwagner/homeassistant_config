@@ -23,7 +23,7 @@ secrets.yaml
 known_devices.yaml
 
 # pycache
-__pycache__
+*/__pycache__
 
 # Other stuff to explicitly ignore
 home-assistant_v2.db
