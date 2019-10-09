@@ -5,6 +5,10 @@ entities:
   light.boekenkast_links: on
   light.tv_lamp: on
   light.schemerlamp: on
+  light.eettafel:
+    state: on
+    brightness: 128
+    color_temp: 355
   light.woonkamer_gordijn_lang:
     state: on
     brightness: 1

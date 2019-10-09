@@ -1,0 +1,23 @@
+platform: mqtt
+name: eettafel 3
+
+command_topic: "cmnd/eettafel_3/POWER"
+
+
+state_topic: "stat/eettafel_3/RESULT"
+state_value_template: "{{value_json.POWER}}"
+
+brightness_command_topic: "cmnd/eettafel_3/Dimmer"
+brightness_state_topic: "stat/eettafel_3/RESULT"
+brightness_value_template: "{{value_json.Dimmer}}"
+brightness_scale: 100
+
+color_temp_command_topic: "cmnd/eettafel_3/CT"
+color_temp_state_topic: "stat/eettafel_3/RESULT"
+color_temp_value_template: "{{value_json.CT}}"
+
+availability_topic: "tele/eettafel_1/LWT"
+payload_available: "Online"
+payload_not_available: "Offline"
+qos: 1
+retain: true

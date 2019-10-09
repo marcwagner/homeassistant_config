@@ -1,0 +1,15 @@
+name: eettafel_driekwart
+entities:
+  light.eettafel_1: 
+    state: on
+    brightness: 192
+    color_temp: 400
+  light.eettafel_2: 
+    state: on
+    brightness: 192
+    color_temp: 400
+  light.eettafel_3: 
+    state: on
+    brightness: 192
+    color_temp: 400
+

@@ -1,0 +1,6 @@
+name: eettafel_vol
+entities:
+  light.eettafel: 
+    state: on
+    brightness: 255
+    color_temp: 153

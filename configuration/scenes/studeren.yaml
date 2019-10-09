@@ -1,11 +1,15 @@
-name: tv_kijken
+name: studeren
 entities:
   light.servieskast: on
   light.boekenkast_rechts: on
   light.boekenkast_links: on
-  light.schemerlamp: on
+  light.eettafel:
+    state: on
+    brightness: 96
+    color_temp: 200
 
   light.woonkamer_gordijn_lang: off
   light.woonkamer_gordijn_kort: off
   light.tv_lamp: off
-  light.eettafel: off
+  light.schemerlamp: off
+

@@ -1,0 +1,6 @@
+name: eettafel_kwart
+entities:
+  light.eettafel: 
+    state: on
+    brightness: 64
+    color_temp: 500

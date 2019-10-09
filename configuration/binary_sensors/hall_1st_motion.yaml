@@ -1,0 +1,6 @@
+name: movement hall 1st floor
+platform: mqtt
+state_topic: tele/sonoff/RESULT
+value_template: '{{value_json.RfReceived.Data}}'
+payload_on: 'ED437E'
+off_delay: 60

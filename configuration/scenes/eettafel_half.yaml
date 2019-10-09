@@ -1,0 +1,6 @@
+name: eettafel_half
+entities:
+  light.eettafel: 
+    state: on
+    brightness: 128
+    color_temp: 355

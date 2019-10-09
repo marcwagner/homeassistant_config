@@ -7,4 +7,5 @@ entities:
   light.woonkamer_gordijn_lang: off
   light.woonkamer_gordijn_kort: off
   light.tv_lamp: off
+  light.eettafel: 0ff
   switch.hall_mirror: off
