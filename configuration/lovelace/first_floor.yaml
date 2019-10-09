@@ -33,6 +33,11 @@ cards:
     style:
       top: 70%
       left: 29%
+  - type: state-icon
+    entity: binary_sensor.movement_hall_1st_floor
+    style:
+      top: 35%
+      left: 60%
   - type: state-label
     entity: sensor.slaapkamer_temperature
     style:
