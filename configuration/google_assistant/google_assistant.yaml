@@ -1,24 +1,24 @@
-
 project_id: 19207692763-qr70t0emisv7kn3u2862l9f39et4049j.apps.googleusercontent.com
 api_key: AIzaSyCB3Z8NogLcAGuLsNnzEe5TWzXf4jISqtw
-service_account: !include service_account.json
-report_state: true
+# service_account: !include service_account.json
+# report_state: true
+secure_devices_pin: '1111'
 exposed_domains:
-  - camera
-  - switch
-  - group
-  - script
-  - fan
-  - cover
-  - media_player
-  - climate
-  - vacuum
-  - alarm_control_pannel
-  - light
-  - lock
-  - sensor
-  - scene
   - binary_sensor
+  - camera
+  - group
+  - light
+  - media_player
+  - scene
+  - script
+  - sensor
+  - switch
+#  - alarm_control_pannel
+#  - climate
+#  - cover
+#  - fan
+#  - lock
+#  - vacuum
 
 
 # old? api_key: AIzaSyCB3Z8NogLcAGuLsNnzEe5TWzXf4jISqtw
