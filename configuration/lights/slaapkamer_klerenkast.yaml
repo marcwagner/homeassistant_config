@@ -1,6 +1,13 @@
+
 platform: mqtt
 name: slaapkamer_klerenkast
-state_topic: "home/slaapkamer/kast-bovenlicht"
-command_topic: "home/slaapkamer/kast-bovenlicht/set"
+state_topic: "stat/kast-bovenlicht/RESULT"  
+value_template: "{{ value_json.POWER }}"
+command_topic: "cmnd/kast-bovenlicht/POWER"
+payload_on: "ON"
+payload_off: "OFF"
+availability_topic: "tele/kast-bovenlicht/LWT"
+payload_available: "Online"
+payload_not_available: "Offline"
 qos: 1
 retain: true

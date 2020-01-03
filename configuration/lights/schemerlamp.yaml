@@ -1,6 +1,14 @@
 platform: mqtt
-name: schemerlamp
-state_topic: "home/woonkamer/bank_schemerlamp"
-command_topic: "home/woonkamer/bank_schemerlamp/set"
+name: "schemerlamp"
+state_topic: "stat/wk_schemerlamp/RESULT"  
+value_template: "{{ value_json.POWER }}"
+command_topic: "cmnd/wk_schemerlamp/POWER"
+payload_on: "ON"
+payload_off: "OFF"
+availability_topic: "tele/wk_schemerlamp/LWT"
+payload_available: "Online"
+payload_not_available: "Offline"
 qos: 1
 retain: true
+
+
