@@ -61,7 +61,7 @@ tts:
 
 #enable MQTT server
 mqtt:
-  broker: 10.0.0.10
+  broker: 10.0.0.1
 
 #notify:
 #  - platform: html5
