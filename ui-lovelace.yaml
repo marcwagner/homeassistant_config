@@ -2,24 +2,19 @@
 title: Home
 
 resources:
+  - url: /local/custom-lovelace/kiosk.js?v=0.0.1
+    type: js
   - url: https://unpkg.com/moment@2.22.2/moment.js
     type: js
   - url: /local/custom-lovelace/calendar-card.js?v=1.0.1
     type: module
   - url: /local/custom-lovelace/atomic-calendar.js
     type: module
-  - url: /local/custom-lovelace/compact-custom-header.js?v=0.0.1
+  - url: /local/custom-lovelace/custom-header.js?v=0.0.1
     type: module
 
-cch:
-  exceptions:
-    - conditions:
-        query_string: kiosk
-      config:
-        kiosk_mode: true
-        default_tab: hall
-
-
+custom_header:
+  kiosk_mode: '{{ {{ user }} == "kiosk" }}'
 
 views:
   - !include configuration/lovelace/main_view.yaml

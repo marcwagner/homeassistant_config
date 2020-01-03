@@ -1,0 +1,4 @@
+name: charlotte 
+id: charlotte12345
+device_trackers:
+  - device_tracker.phone_charlotte

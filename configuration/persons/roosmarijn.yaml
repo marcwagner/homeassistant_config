@@ -1,5 +1,5 @@
 name: roosmarijn
 id: roosmarijn12345
 device_trackers:
-  - device_tracker.phoneroosmarijn
+  - device_tracker.phone_roosmarijn
 

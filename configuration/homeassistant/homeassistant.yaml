@@ -18,6 +18,16 @@
         - 10.0.0.0/24
       trusted_users:
         10.0.0.0/24:
-          - f05976f2896e4587aa26166950db4ad7  # marc
-          - 2789ee63903d49e382d2f331fcaafcf1  # koosje
+          - 6b8395deb4d542829a9f3ebc175e920b  # marc
+          - 826a059d7b7045dd8bb0a46643906bcb  # koosje
 
+
+  customize:
+    person.marc:
+      entity_picture: "/local/marc.jpg"
+    person.koosje:
+      entity_picture: "/local/koosje.jpg"
+    person.charlotte:
+      entity_picture: "/local/charlotte.jpg"
+    person.roosmarijn:
+      entity_picture: "/local/roosmarijn.jpg"
