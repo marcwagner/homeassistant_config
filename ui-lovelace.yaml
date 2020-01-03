@@ -14,7 +14,6 @@ resources:
     type: module
 
 custom_header:
-  kiosk_mode: '{{ {{ user }} == "kiosk" }}'
 
 views:
   - !include configuration/lovelace/main_view.yaml
