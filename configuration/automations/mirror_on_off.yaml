@@ -1,8 +1,11 @@
 - id: hall_motion_mirror_on
   alias: beweging in de hal - spiegel aan
   trigger:
-    platform: state
+  - platform: state
     entity_id: binary_sensor.hall_motion
+    to: 'on'
+  - platform: state
+    entity_id: binary_sensor.movement_hall_1st_floor
     to: 'on'
   condition:
     condition: numeric_state
@@ -12,6 +15,7 @@
     service: switch.turn_on
     data:
       entity_id: switch.hall_mirror
+
 
 - id: hall_motion_mirror_off
   alias: geen beweging in de hal - spiegel uit
@@ -25,4 +29,3 @@
     service: switch.turn_off
     data:
       entity_id: switch.hall_mirror
-

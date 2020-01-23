@@ -25,15 +25,15 @@
 - id: movement_indoors
   alias: beweging thuis
   trigger:
-    - platform: state
-      entity_id: binary_sensor.hall_motion
-      to: 'on'
-    - platform: state
-      entity_id: binary_sensor.movement_hall_1st_floor
-      to: 'on'
+  - platform: state
+    entity_id: binary_sensor.hall_motion
+    to: 'on'
+  - platform: state
+    entity_id: binary_sensor.movement_hall_1st_floor
+    to: 'on'
   condition:
     condition: time
-    after: '6:00:00'
+    after: '6:50:00'
     before: '22:00:00'
   action:
     service: input_select.select_option
@@ -55,19 +55,3 @@
     data:
       entity_id: input_select.resident_state
       option: Sleeping
-
-- id: time_to_wake
-  alias: opstaan
-  trigger:
-    platform: time
-    at: '06:30:00'
-  condition:
-  - condition: state
-    entity_id: input_select.resident_state
-    state: Sleeping
-  action:
-    service: input_select.select_option
-    data:
-      entity_id: input_select.resident_state
-      option: Home
-
