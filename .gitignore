@@ -22,6 +22,7 @@ ip_bans.yaml
 secrets.yaml
 known_devices.yaml
 configuration/google_assistant/service.account.json
+configuration/google_assistant/*.json
 
 # pycache
 */__pycache__
