@@ -1,16 +1,28 @@
 - id: hall_motion_mirror_on
   alias: beweging in de hal - spiegel aan
   trigger:
-  - platform: state
+    platform: state
     entity_id: binary_sensor.hall_motion
-    to: 'on'
-  - platform: state
-    entity_id: binary_sensor.movement_hall_1st_floor
     to: 'on'
   condition:
     condition: numeric_state
     entity_id: sensor.br_irradiance
     below: 300
+  action:
+    service: switch.turn_on
+    data:
+      entity_id: switch.hall_mirror
+
+- id: hall_motion_mirror_on_morning
+  alias: spiegel aan in de ochtend
+  trigger:
+    platform: state
+    entity_id: binary_sensor.movement_hall_1st_floor
+    to: 'on'
+  condition:
+    condition: time
+    after: '6:00:00'
+    before: '7:00:00'
   action:
     service: switch.turn_on
     data:

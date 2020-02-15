@@ -26,7 +26,7 @@ map:
 
 google:
   client_id: 19207692763-qr70t0emisv7kn3u2862l9f39et4049j.apps.googleusercontent.com
-  client_secret: ZKsjZ6iQ9r2-ANduES70ryE9
+  client_secret: !secret google_calendar
 
 # enable lovelace
 lovelace:

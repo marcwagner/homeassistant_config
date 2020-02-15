@@ -1,7 +1,7 @@
 project_id: 19207692763-qr70t0emisv7kn3u2862l9f39et4049j.apps.googleusercontent.com
-api_key: AIzaSyCB3Z8NogLcAGuLsNnzEe5TWzXf4jISqtw
-# service_account: !include service_account.json
-# report_state: true
+#api_key: AIzaSyCB3Z8NogLcAGuLsNnzEe5TWzXf4jISqtw
+service_account: !include home-assistant.json
+report_state: true
 secure_devices_pin: '1111'
 exposed_domains:
   - binary_sensor

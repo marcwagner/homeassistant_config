@@ -15,11 +15,11 @@ cards:
       maxDaysToShow: 8
       entities:
       - calendar.holidays_in_netherlands
-      - calendar.contacts
-      - calendar.koosjeenmarcgmailcom
+#      - calendar.contacts
+      - calendar.koosjeenmarc_gmail_com
       - calendar.koosje_wagner
       - calendar.koosje_werk
-      - calendar.marc_wagner
+      - calendar.wagner_marc_gmail_com
       - calendar.koosje_maar_wel_relevant_voor_marc
       - calendar.prive_woonboot
   - type: vertical-stack

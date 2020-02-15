@@ -14,6 +14,12 @@ resources:
     type: module
 
 custom_header:
+  header_text: Wagner - Home Assistant
+  exceptions:
+    - conditions:
+        user: kiosk
+      config:
+        kiosk_mode: true
 
 views:
   - !include configuration/lovelace/main_view.yaml
