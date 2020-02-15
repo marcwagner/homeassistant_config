@@ -1,6 +1,8 @@
+\\
 name: koosje
 id: koosje12345
 user_id: 826a059d7b7045dd8bb0a46643906bcb
 device_trackers:
   - device_tracker.phone_koosje
+  - device_tracker.mi_6_2
 
