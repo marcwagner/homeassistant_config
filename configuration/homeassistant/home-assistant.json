@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "home-assistant-252719",
+  "private_key_id": "2ae6c20e656ace2589caf6949532cd8992e8787d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDH44kYY3OLR2Pq\nO1VoET4fMl1qvbr+j9C9DjANyaajp7YjjoPes7USBytFq5TcbsoJU20eYamxhbqn\n6rGxNWlqJ2H5QI538e8fDgrHzJHaydpWVvuF3OIeMQEKMMM0MyGJTuEdTo/q1RCs\nDq+FW0MQIbz/4C2B04+D4C7bBk8qO/Rh+y8KsR59z51SkMzdG+DNWcZ//U1yOInP\niYLZ3FFJq1I7lhN61xUeJe33tmm0pv08oVg8DGFmoKnAHVO3ydk/tjxGKiVIazGT\nJF0tnGSC9jyptU6cISWClvNwTM0Z/0gxoRr0MEDDXTqFGAmr6a8kvv9C8Cml4Stq\n6f47KnVXAgMBAAECggEAHbEf4T6MoEjHf7i2lBHTn4C0vbFXQI8OW7bqznGAzliQ\nRrHZxs/8+qOT+vJk12Whn0cEM3ogYd1Sf7TuFjuv3/Pfqs27G/gVJBDK6yjpFY3c\nX+zlydmowQFYfTIHHQ7nUWUlLVxJJoHlyxkXW4DV8mSAlaWwPNO3QsifTSufwM8J\n1bKXqu9ZkdLOhQDxRazqPts9nSzlJTnfIGI+/uEBCx0BQHcJwhqh/JZKzNJP0fda\nIlIdH+oJuFyVpZvQ9dhDplUAPFX/ypqCrvEOdGALHFs/BA5n939JHEYGrw05bvTy\nDT2DYhGaWi50Jnpv2oAZaniZMuzWZuQUQKMeMYstoQKBgQDsg1gYLTuisn3QRLk3\n+LdzYkitegTZvKt3Me5FrAMkv759IvkvoBA54+1Qt4IhpNWAR6K0MOxRTx3POCL5\nMRMUT+OADi5bZqfsj/c3I1JsUdscogr1sVJBfj4FW7kswTPRdLgVMCYk0E4pqqkR\nYLZ21gqGfN1wy09Uv9DJkqy5ZwKBgQDYW7GYd+0e/O6ML0eSnUfYRLaSUeBNk1ah\nAaf7pN4y34vkfmaAlIcOyjBs/jjyCZTYS20MtEnpKXbBwSKZYniQbr21h8nSOnr/\njO0a9TZJYtLuMH5MqlkQk1HiMTCokrDFs9lpfpb/KPj3vdVVumkoMuHr4zxDNXBi\nmfguaI2+kQKBgH5Xl3qqxx2dXcogvBSjP1Ra31oUQX0S5UGyIYeEYNWDvD1armR7\ni89w63ff35sbU5XILqk1LTguHE1yvnQBfCCwoGXqrWbUCsY7DaOdscz9WSANi+89\nfyRPTNBN9DhtKMIuKJvg8a9euzJU4SXQVQhcRJkdIKm9Ya5zHRRgzvXnAoGAY71B\njcwbX+GyBqX1FL201Ro4IBPml1yI3whobDWAyWsMjnVGw5e0+zhyQoyfq9SG7X83\n8ldai0Y2HPPwA03Fzq9+fSTwAR48fXp2A6tvLz2Dh5KLZsRQ8rc3VFLg35VgMIPM\ngjl9WnuE6pB0vGSG/aUXSSskKMeF266nHp3MWkECgYBKeEbbP8aywAIAlXnFTHzi\nQVFszbaR9nxi6c0QcZAO5XkcwdFsVT3bipY2z3sqXQODLg9AXo7x9VVBofLC0tGV\nBxTz5r26z3pBxraIgu/Ka9P4f+QNHQEuELnMWWm7VPC3w1jQ5WOmuCxJy4+jFo4i\nedhLHf8uVnSe9pcvhaVuMQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "home-assistant-to-google-home@home-assistant-252719.iam.gserviceaccount.com",
+  "client_id": "116259951190143627400",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/home-assistant-to-google-home%40home-assistant-252719.iam.gserviceaccount.com"
+}
