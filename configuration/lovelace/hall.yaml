@@ -11,17 +11,19 @@ cards:
     - type: iframe
       url: https://marcwagner.github.io/clock/lovelace_clock.html
       aspect_ratio: 110%
+
     - type: "custom:atomic-calendar"
       maxDaysToShow: 8
       entities:
-      - calendar.holidays_in_netherlands
-#      - calendar.contacts
-      - calendar.koosjeenmarc_gmail_com
-      - calendar.koosje_wagner
-      - calendar.koosje_werk
-      - calendar.wagner_marc_gmail_com
-      - calendar.koosje_maar_wel_relevant_voor_marc
-      - calendar.prive_woonboot
+      - entity: calendar.wagner_marc_gmail_com
+      - entity: calendar.holidays_in_netherlands
+      - entity: calendar.prive_woonboot
+      - entity: calendar.koosje_maar_wel_relevant_voor_marc
+      - entity: calendar.koosjeenmarc_gmail_com 
+      - entity: calendar.koosje_werk
+      - entity: calendar.koosje_wagner
+
+
   - type: vertical-stack
     cards:
     - type: glance

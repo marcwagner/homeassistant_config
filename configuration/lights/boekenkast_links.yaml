@@ -1,6 +1,21 @@
 platform: mqtt
 name: boekenkast links
-state_topic: "home/woonkamer/boekenkast/light/light2"
-command_topic: "home/woonkamer/boekenkast/light/light2/set"
+
+command_topic: "boekenkast/cmnd/POWER2"
+state_topic: "boekenkast/tele/STATE"
+state_value_template: "{{value_json.POWER2}}"
+payload_on: "ON"
+payload_off: "OFF"
+
+brightness_state_topic: "boekenkast/tele/STATE"
+brightness_value_template: "{{  value_json.Channel2  }}"
+brightness_scale: 100
+brightness_command_topic: "boekenkast/cmnd/Channel2"
+on_command_type: "brightness"
+
+availability_topic: "boekenkast/tele/LWT"
+payload_available: "Online"
+payload_not_available: "Offline"
 qos: 1
 retain: true
+

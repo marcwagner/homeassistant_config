@@ -1,0 +1,9 @@
+- platform: mqtt
+  name: "boekenkast_temperature"
+  state_topic: "boekenkast/tele/SENSOR"
+  value_template: "{{ value_json['DS18B20'].Temperature }}"
+  unit_of_measurement: "C"
+  device_class: temperature
+  availability_topic: "boekenkast/tele/LWT"
+  payload_available: "Online"
+  payload_not_available: "Offline"

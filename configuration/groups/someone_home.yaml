@@ -1,6 +1,5 @@
 someone_home:
   name: iemand thuis
-  view: no
   entities:
     - person.marc
     - person.koosje

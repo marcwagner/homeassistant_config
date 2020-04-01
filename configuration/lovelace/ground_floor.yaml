@@ -26,20 +26,29 @@ cards:
     style:
       top: 63%
       left: 7%
+
   - type: state-icon
-    entity: light.boekenkast_links
+    entity: light.eettafel_1
     tap_action:
       action: toggle
     style:
-      top: 95%
-      left: 36%
+      top: 54%
+      left: 21%
   - type: state-icon
-    entity: light.boekenkast_rechts
+    entity: light.eettafel_2
     tap_action:
       action: toggle
     style:
-      top: 95%
-      left: 44%
+      top: 61%
+      left: 21%
+  - type: state-icon
+    entity: light.eettafel_3
+    tap_action:
+      action: toggle
+    style:
+      top: 68%
+      left: 21%
+
   - type: state-icon
     entity: light.woonkamer_gordijn_kort
     tap_action:
@@ -54,6 +63,34 @@ cards:
     style:
       top: 68%
       left: 45%
+
+  - type: state-icon
+    entity: light.boekenkast_links
+    tap_action:
+      action: toggle
+    style:
+      top: 95%
+      left: 36%
+  - type: state-icon
+    entity: light.boekenkast_rechts
+    tap_action:
+      action: toggle
+    style:
+      top: 95%
+      left: 44%
+  - type: state-label
+    entity: sensor.boekenkast_temperature
+    style:
+      top: 85%
+      left: 40%
+  - type: state-icon
+    entity: binary_sensor.boekenkast_motion
+    style:
+      top: 90%
+      left: 40%
+
+
+
   - type: state-label
     entity: sensor.hall_temperature
     style:

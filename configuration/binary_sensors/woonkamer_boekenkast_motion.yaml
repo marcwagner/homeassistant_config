@@ -1,0 +1,9 @@
+platform: mqtt
+name: "boekenkast_motion"
+state_topic: "boekenkast/stat/SWITCH1"
+value_template: "{{ value_json.STATE }}"
+availability_topic: "boekenkast/tele/LWT"
+payload_available: "Online"
+payload_not_available: "Offline"
+device_class: motion
+qos: 1
