@@ -1,4 +1,4 @@
-platform: mqtt
-name: hall motion
-device_class: motion
-state_topic: home/hall/motion_sensor
+- platform: mqtt
+  name: hall motion
+  device_class: motion
+  state_topic: home/hall/motion_sensor

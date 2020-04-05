@@ -1,7 +1,7 @@
-name: licht_slaapkamer
-platform: mqtt
-state_topic: tele/sonoff/RESULT
-value_template: '{{value_json.RfReceived.Data}}'
-payload_on: '028838'
-off_delay: 0
+- platform: mqtt
+  name: licht_slaapkamer
+  state_topic: tele/sonoff/RESULT
+  value_template: '{{value_json.RfReceived.Data}}'
+  payload_on: '028838'
+  off_delay: 0
 

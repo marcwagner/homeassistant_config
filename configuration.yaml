@@ -70,7 +70,7 @@ mqtt:
 #    gcm_sender_id: 424576196281
 
 automation: !include_dir_merge_list configuration/automations/
-binary_sensor: !include_dir_list configuration/binary_sensors/
+binary_sensor: !include_dir_merge_list configuration/binary_sensors/
 device_tracker: !include_dir_list configuration/device_tracker/
 google_assistant: !include configuration/google_assistant/google_assistant.yaml
 group: !include_dir_merge_named configuration/groups/

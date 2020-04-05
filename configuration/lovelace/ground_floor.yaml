@@ -89,7 +89,16 @@ cards:
       top: 90%
       left: 40%
 
-
+  - type: state-label
+    entity: sensor.werkplek_temperature
+    style:
+      top: 85%
+      left: 7%
+  - type: state-icon
+    entity: binary_sensor.werkplek_motion
+    style:
+      top: 90%
+      left: 7%
 
   - type: state-label
     entity: sensor.hall_temperature
